@@ -1,28 +1,30 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
   async rewrites() {
     return [
       {
         source: "/chat",
-        destination: "http://localhost:3001/chat",
+        destination: "https://pppp-f3jq.onrender.com/chat",
       },
       {
         source: "/chat/:path+",
-        destination: "http://localhost:3001/chat/:path+",
+        destination: "https://pppp-f3jq.onrender.com/chat/:path+",
       },
       {
         source: "/chat-static/:path+",
-        destination: "http://localhost:3001/chat-static/:path+",
+        destination: "https://pppp-f3jq.onrender.com/chat-static/:path+",
       },
     ];
   },
+
   experimental: {
     agentFeedback: true,
   },
+
   cacheComponents: true,
   partialPrefetching: true,
+
   turbopack: {
     rules: {
       "*.css": {
