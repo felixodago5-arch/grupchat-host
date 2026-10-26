@@ -5,15 +5,15 @@ const nextConfig: NextConfig = {
     return [
       {
         source: "/chat",
-        destination: "https://pppp-f3jq.onrender.com/chat",
+        destination: "https://grupchat-chat.vercel.app/chat",
       },
       {
         source: "/chat/:path+",
-        destination: "https://pppp-f3jq.onrender.com/chat/:path+",
+        destination: "https://grupchat-chat.vercel.app/chat/:path+",
       },
       {
         source: "/chat-static/:path+",
-        destination: "https://pppp-f3jq.onrender.com/chat-static/:path+",
+        destination: "https://grupchat-chat.vercel.app/chat-static/:path+",
       },
     ];
   },
