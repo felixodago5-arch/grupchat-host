@@ -1,11 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  async rewrites() {
- 
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
+  /* config options here */
   async rewrites() {
     return [
       {
@@ -22,14 +18,11 @@ const nextConfig: NextConfig = {
       },
     ];
   },
-
   experimental: {
     agentFeedback: true,
   },
-
   cacheComponents: true,
   partialPrefetching: true,
-
   turbopack: {
     rules: {
       "*.css": {
@@ -41,4 +34,5 @@ const nextConfig: NextConfig = {
 };
 
 export default nextConfig;
+
 
