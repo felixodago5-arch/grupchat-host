@@ -14,13 +14,19 @@ export default function Home() {
             GrupChat
           </span>
 
-          <nav aria-label="Main">
+          <nav aria-label="Main" className="flex items-center gap-2">
             <a
               href="/"
               aria-current="page"
-              className="rounded-full bg-band px-6 py-2.5 text-sm font-medium text-white"
+              className="rounded-full bg-band px-5 py-2.5 text-sm font-medium text-white"
             >
               Plans
+            </a>
+            <a
+              href="/calendar"
+              className="rounded-full px-5 py-2.5 text-sm font-medium text-muted hover:text-ink"
+            >
+              Calendar
             </a>
           </nav>
         </header>
@@ -112,4 +118,3 @@ export default function Home() {
     </div>
   );
 }
-  
